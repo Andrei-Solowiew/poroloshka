@@ -1,0 +1,268 @@
+.configurator {
+  padding: 80px;
+  background-color: #cce6ff;
+  background-image: url("../img/configurator__back_top.png");
+  background-repeat: no-repeat;
+}
+
+.configurator__container {
+  display: flex;
+}
+
+.configurator__h2 {
+  margin-bottom: 21px;
+  letter-spacing: 0.03em;
+}
+
+.configurator__h3 {
+  margin-bottom: 33px;
+  font-family: "Circe", sans-serif;
+}
+
+.configurator__left {
+  position: relative;
+}
+
+.configurator__list {
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.configurator__item {
+  padding: 2px 0 2px 16px;
+  display: flex;
+  width: 324px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 5px 5px 60px rgba(75, 79, 90, 0.1);
+}
+
+.configurator__item:nth-child(odd) {
+  margin-right: 13px;
+}
+
+.configurator__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 12px;
+}
+
+.configurator__item-img {
+  margin-right: 30px;
+}
+
+.configurator__h4 {
+  width: 144px;
+  /* margin-right: 38px; */
+  display: flex;
+  align-items: center;
+  line-height: 100%;
+}
+
+.configurator__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.configurator__checkbox + label {
+  position: relative;
+  margin-top: 2px;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  cursor: pointer;
+  user-select: none;
+  right: 1px;
+}
+.configurator__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.configurator__checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.configurator__checkbox:checked + label::after {
+  position: absolute;
+  right: 201px;
+  content: "";
+  display: inline-block;
+  width: 105px;
+  height: 107px;
+  background-image: url("../img/border_blue.png");
+}
+
+.configurator__img_left {
+  display: none;
+}
+
+.configurator__btn {
+  padding: 30px 0;
+  width: 660px;
+  text-transform: uppercase;
+}
+
+.configurator__right {
+  position: relative;
+}
+
+.configurator__img {
+  position: absolute;
+  top: -64px;
+  left: 103px;
+}
+
+@media (max-width: 1720px) {
+  .configurator__img {
+    /* margin-top: 60px;
+    margin-left: 53px; */
+    top: 0px;
+    left: 100px;
+    /* width: 70%;
+    height: 90%; */
+  }
+}
+
+@media (max-width: 1630px) {
+  .configurator__img {
+    top: 50px;
+    left: 100px;
+    width: 484px;
+    height: 83%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .configurator__img {
+    top: 50px;
+    left: 20px;
+    width: 484px;
+    height: 83%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .configurator__img {
+    top: 50px;
+    left: -40px;
+    width: 455px;
+    height: 83%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .configurator__list {
+    margin-bottom: 250px;
+  }
+
+  .configurator__img_right {
+    display: none;
+  }
+
+  .configurator__img {
+    top: 330px;
+    left: 100px;
+    height: 76%;
+  }
+
+  .configurator__img_left {
+    display: block;
+  }
+}
+
+@media (max-width: 920px) {
+  .configurator {
+    padding: 50px 80px;
+  }
+
+  .configurator__left {
+    text-align: center;
+  }
+
+  .configurator__list {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .configurator__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .configurator__item:nth-child(odd) {
+    margin-right: 5px;
+  }
+
+  .configurator__item {
+    margin-right: 5px;
+  }
+
+  .configurator__right {
+    display: none;
+  }
+
+  .configurator__img_left {
+    display: none;
+  }
+
+  .configurator__btn {
+    margin: 0 auto;
+    width: 525px;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .configurator {
+    padding: 50px 0;
+  }
+
+  .configurator__left {
+    text-align: left;
+  }
+
+  .configurator__list {
+    justify-content: left;
+  }
+
+  .configurator__btn {
+    margin: 0;
+    width: 324px;
+  }
+}
+
+@media(max-width: 370px) {
+  .configurator__h2 {
+    margin-bottom: 0;
+  }
+  
+  .configurator__item {
+    width: 270px;
+  }
+
+  .configurator__item-img {
+    margin-right: 0;
+  }
+
+  .configurator__checkbox + label {
+    top: 5px;
+    right: 10px;
+  }
+
+  .configurator__btn {
+    width: 270px;
+  }
+}
+

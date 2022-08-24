@@ -1,0 +1,87 @@
+.patent {
+  padding: 55px 0 0 0;
+}
+
+.patent__container {
+  display: flex;
+}
+
+.patent__text {
+  margin-right: 12%;
+  margin-top: 8%;
+}
+
+.patent__h2 {
+  margin-bottom: 10px;
+}
+
+.patent__p {
+  max-width: 315px;
+}
+
+.patent__list {
+  margin-top: -40px;
+}
+
+.patent__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+@media(max-width: 1500px) {
+  .patent__container {
+    flex-direction: column;
+  }
+
+  .patent__text {
+    margin-right: 0;
+    margin-bottom: 50px;
+    align-self: center;
+  }
+
+  .patent__h2,
+  .patent__p {
+    text-align: center;
+  }
+
+  .patent__list {
+    align-self: center;
+  }
+}
+
+@media(max-width: 1020px) {
+  .patent {
+    padding: 55px 0 40px 0;
+  }
+  .patent__list {
+    flex-direction: column;
+  }
+
+  .patent__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 400px) {
+  .patent {
+    padding-top: 0;
+  }
+
+  .patent__text {
+    margin-bottom: 70px;
+  }
+
+  .patent__h2,
+  .patent__p {
+    text-align: left;
+  }
+
+  .patent__list {
+    align-self: flex-start;
+  }
+
+  .patent__img {
+    width: 151px;
+    height: 210px;
+  }
+}

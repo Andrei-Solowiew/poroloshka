@@ -1,0 +1,375 @@
+.top {
+  padding-bottom: 300px;
+  /* background-image: url('../img/cloud_one.png'), url('../img/cloud_two.png'), url('../img/cloud_three.png'), url('../img/cloud_four.png'), 
+  url('../img/cloud_five\,.png'), url('../img/cloud_six.png'), url('../img/cloud_seven.png'),
+  url('../img/cloud_eight.png'), url('../img/cloud_nine.png'), url('../img/cloud_ten.png'),
+  url('../img/cloud_eleven.png'), url('../img/cloud_twelve.png'), url('../img/cloud_thirteen.png'), url('../img/cloud_fourteen.png'), url('../img/cloud_fiveteen.png'), url('../img/cloud_sixteen.png'), url('../img/cloud_seventeen.png'),  url('../img/cloud_eighteen.png'),
+  url('../img/cloud_nineteen.png'), url('../img/cloud_twenty.png'), url('../img/cloud_twentyone.png'), url('../img/cloud_twentytwo.png'), url('../img/cloud_twentythree.png'), linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%); */
+  /*48*/
+  background-image: url("../img/Group\ 1632518568.png"),
+    url("../img/hero__man.png"), url("../img/11.png"),
+    linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 0 145px, 1025px 100px, 0 150px, 0 0;
+}
+
+.header {
+  padding: 30px 0 0 0;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__left {
+  margin-right: 98px;
+  display: flex;
+}
+
+.header__left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__img {
+  margin-right: 6px;
+}
+
+.header__h3 {
+  margin-bottom: 5px;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+
+.header__p {
+  text-transform: uppercase;
+  font-family: "Circe", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.header__list-burger {
+  display: none;
+}
+
+.header__list {
+  margin-right: 109px;
+  align-items: center;
+}
+
+.header__item {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__tel {
+  cursor: pointer;
+  position: relative;
+  padding-right: 18px;
+  margin-bottom: 7px;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+
+.header__tel::after {
+  content: "";
+  top: 5px;
+  right: 0;
+  position: absolute;
+  width: 11px;
+  height: 8px;
+  background-image: url("../img/header__arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease;
+}
+
+.header__tel.open__menu::after {
+  transform: rotate(180deg);
+}
+
+.header__call {
+  display: none;
+  padding-left: 23px;
+  font-family: "Circe", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background-image: url("../img/point.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+@media (max-width: 1850px) {
+  .top {
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__man.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: 0 145px, 725px 100px, 0 150px, 0 0;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__left {
+    margin-right: 0;
+  }
+
+  .header__list {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1550px) {
+  .top {
+    padding-bottom: 50px;
+    /* background-image: url('../img/cloud_one.png'), url('../img/cloud_two.png'), url('../img/cloud_three.png'), url('../img/cloud_four.png'), 
+  url('../img/cloud_five\,.png'), url('../img/cloud_six.png'), url('../img/cloud_seven.png'),
+  url('../img/cloud_eight.png'), url('../img/cloud_nine.png'), url('../img/cloud_ten.png'),
+  url('../img/cloud_eleven.png'), url('../img/cloud_twelve.png'), url('../img/cloud_thirteen.png'), url('../img/cloud_fourteen.png'), url('../img/cloud_fiveteen.png'), url('../img/cloud_sixteen.png'), url('../img/cloud_seventeen.png'),  url('../img/cloud_eighteen.png'),
+  url('../img/cloud_nineteen.png'), url('../img/cloud_twenty.png'), url('../img/cloud_twentyone.png'), url('../img/cloud_twentytwo.png'), url('../img/cloud_twentythree.png'), linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%); */
+    /*48*/
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__man.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%, 522px 637px, 100%;
+    background-position: 0 145px, 833px 190px, 0 150px, 0 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .top {
+    padding-bottom: 50px;
+    /* background-image: url('../img/cloud_one.png'), url('../img/cloud_two.png'), url('../img/cloud_three.png'), url('../img/cloud_four.png'), 
+  url('../img/cloud_five\,.png'), url('../img/cloud_six.png'), url('../img/cloud_seven.png'),
+  url('../img/cloud_eight.png'), url('../img/cloud_nine.png'), url('../img/cloud_ten.png'),
+  url('../img/cloud_eleven.png'), url('../img/cloud_twelve.png'), url('../img/cloud_thirteen.png'), url('../img/cloud_fourteen.png'), url('../img/cloud_fiveteen.png'), url('../img/cloud_sixteen.png'), url('../img/cloud_seventeen.png'),  url('../img/cloud_eighteen.png'),
+  url('../img/cloud_nineteen.png'), url('../img/cloud_twenty.png'), url('../img/cloud_twentyone.png'), url('../img/cloud_twentytwo.png'), url('../img/cloud_twentythree.png'), linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%); */
+    /*48*/
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__man.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%, 322px 437px, 100%;
+    background-position: 0 60px, 930px 278px, 0 150px, 0 0;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__left {
+    margin-right: 0;
+  }
+
+  .header__list {
+    display: none;
+    margin-right: 0;
+  }
+
+  .header__list {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header__item {
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    text-align: center;
+    border: 1px solid #515758;
+    background-color: #CCE7FF;
+  }
+
+  .header__list-burger {
+    left: -20px;
+    top: 20px;
+    cursor: pointer;
+    position: relative; /* задаем относительное позиционирование */
+    width: 40px; /* определяем размеры блока */
+    height: 35px;
+    display: block;
+    margin-left: 10px;
+  }
+
+  .header__list-burger span,
+  .header__list-burger:after,
+  .header__list-burger:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+  }
+  .header__list-burger span {
+    top: 16px;
+    transition: 0.4s;
+  }
+  .header__list-burger:after,
+  .header__list-burger:before {
+    content: "";
+  }
+  .header__list-burger:after {
+    bottom: 5px;
+    transition: 0.4s;
+  }
+  .header__list-burger:before {
+    top: 5px;
+    transition: 0.4s;
+  }
+
+  .header__list-burger.open__menu span {
+    opacity: 0;
+  }
+  .header__list-burger.open__menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+  }
+  .header__list-burger.open__menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .top {
+    padding-bottom: 50px;
+    /* background-image: url('../img/cloud_one.png'), url('../img/cloud_two.png'), url('../img/cloud_three.png'), url('../img/cloud_four.png'), 
+  url('../img/cloud_five\,.png'), url('../img/cloud_six.png'), url('../img/cloud_seven.png'),
+  url('../img/cloud_eight.png'), url('../img/cloud_nine.png'), url('../img/cloud_ten.png'),
+  url('../img/cloud_eleven.png'), url('../img/cloud_twelve.png'), url('../img/cloud_thirteen.png'), url('../img/cloud_fourteen.png'), url('../img/cloud_fiveteen.png'), url('../img/cloud_sixteen.png'), url('../img/cloud_seventeen.png'),  url('../img/cloud_eighteen.png'),
+  url('../img/cloud_nineteen.png'), url('../img/cloud_twenty.png'), url('../img/cloud_twentyone.png'), url('../img/cloud_twentytwo.png'), url('../img/cloud_twentythree.png'), linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%); */
+    /*48*/
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__man.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%, 322px 437px, 100%;
+    background-position: 0 95px, 850px 278px, 0 150px, 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top {
+    padding-bottom: 50px;
+    /* background-image: url('../img/cloud_one.png'), url('../img/cloud_two.png'), url('../img/cloud_three.png'), url('../img/cloud_four.png'), 
+  url('../img/cloud_five\,.png'), url('../img/cloud_six.png'), url('../img/cloud_seven.png'),
+  url('../img/cloud_eight.png'), url('../img/cloud_nine.png'), url('../img/cloud_ten.png'),
+  url('../img/cloud_eleven.png'), url('../img/cloud_twelve.png'), url('../img/cloud_thirteen.png'), url('../img/cloud_fourteen.png'), url('../img/cloud_fiveteen.png'), url('../img/cloud_sixteen.png'), url('../img/cloud_seventeen.png'),  url('../img/cloud_eighteen.png'),
+  url('../img/cloud_nineteen.png'), url('../img/cloud_twenty.png'), url('../img/cloud_twentyone.png'), url('../img/cloud_twentytwo.png'), url('../img/cloud_twentythree.png'), linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%); */
+    /*48*/
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__man.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%, 322px 437px, 100%;
+    background-position: 0 175px, 770px 278px, 0 150px, 0 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top {
+    padding-bottom: 50px;
+    /* background-image: url('../img/cloud_one.png'), url('../img/cloud_two.png'), url('../img/cloud_three.png'), url('../img/cloud_four.png'), 
+  url('../img/cloud_five\,.png'), url('../img/cloud_six.png'), url('../img/cloud_seven.png'),
+  url('../img/cloud_eight.png'), url('../img/cloud_nine.png'), url('../img/cloud_ten.png'),
+  url('../img/cloud_eleven.png'), url('../img/cloud_twelve.png'), url('../img/cloud_thirteen.png'), url('../img/cloud_fourteen.png'), url('../img/cloud_fiveteen.png'), url('../img/cloud_sixteen.png'), url('../img/cloud_seventeen.png'),  url('../img/cloud_eighteen.png'),
+  url('../img/cloud_nineteen.png'), url('../img/cloud_twenty.png'), url('../img/cloud_twentyone.png'), url('../img/cloud_twentytwo.png'), url('../img/cloud_twentythree.png'), linear-gradient(0deg, #cce7ff, #cce7ff),
+    linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%); */
+    /*48*/
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__man.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%, 322px 437px, 100%;
+    background-position: 0 175px, 675px 278px, 0 150px, 0 0;
+  }
+}
+
+@media(max-width: 1200px) {
+  .header__img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .header__p {
+    letter-spacing: 0;
+  }
+}
+
+@media(max-width: 1020px) {
+  .top {
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__mn.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-position: 0 155px, 675px 278px, 0 165px, 0 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .header__left-text {
+    display: none;
+  }
+
+  .header__container {
+    max-width: 630px;
+  }
+
+  .top {
+    background-image: url("../img/Group\ 1632518568.png"),
+      url("../img/hero__mn.png"), url("../img/11.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+    background-position: 0 285px, 675px 278px, 0 255px, 0 0;
+  }
+}
+
+@media(max-width: 564px) {
+  .top {
+    background-image: url("../img/roup\ 1632518568.png"),
+      url("../img/hero__mn.png"), url("../img/1.png"),
+      linear-gradient(0deg, #cce7ff, #cce7ff),
+      linear-gradient(180deg, #d0e2ec 0%, rgba(226, 245, 255, 0) 100%);
+  }
+
+  .header__right {
+    display: none;
+  }
+}

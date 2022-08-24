@@ -1,0 +1,115 @@
+.luck {
+  padding: 23px 0;
+}
+
+.luck__container {
+  display: flex;
+  max-width: 1360px;
+}
+
+.luck__left {
+  margin-right: 145px;
+}
+
+.luck__right {
+  margin-top: 87px;
+}
+
+.luck__h2 {
+  margin-bottom: 25px;
+}
+
+.luck__p {
+  margin-bottom: 35px;
+}
+
+.luck__wrapper {
+  display: flex;
+}
+
+.luck__form {
+  margin-right: 27px;
+}
+
+.luck__label {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: rgba(75, 79, 90, 0.7);
+  text-transform: none;
+  font-weight: 400;
+  font-family: 'Circe', sans-serif;
+}
+
+.luck__label .orange {
+  color: #ef483d;
+}
+
+.luck__input {
+  margin-bottom: 13px;
+  padding: 17px 29px;
+  width: 380px;
+  background-color: #F3F3F6;
+  border-bottom: 2px solid #d7dae0;
+  border-radius: 10px 10px 0 0;
+  color: #4B4F5A;
+  font-weight: 400;
+}
+
+.luck__input::placeholder {
+  font-family: 'Circe', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4B4F5A;
+}
+
+.luck__btn {
+  margin-top: 10px;
+  padding: 26px 20px;
+  width: 383px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.luck__img {
+  margin-top: 28px;
+}
+
+@media(max-width: 1300px) {
+  .luck {
+    padding-top: 0;
+  }
+  
+  .luck__container {
+    flex-direction: column;
+    max-width: 730px;
+  }
+
+  .luck__wheel {
+    display: none;
+  }
+}
+
+@media(max-width: 700px) {
+  .luck__wrapper {
+    justify-content: center;
+  }
+
+  .luck__img {
+    display: none;
+  }
+}
+
+@media(max-width: 450px) {
+  .luck__wrapper {
+    justify-content: left;
+  }
+
+  .luck__input {
+    padding: 22px 29px;
+    width: 270px;
+  }
+
+  .luck__btn {
+    width: 270px;
+  }
+}

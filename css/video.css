@@ -1,0 +1,267 @@
+.video {
+  padding: 20px 0 2px 0;
+  background-color: #cce6ff;
+  background-image: url("../img/video__clouds_1.png"),
+    url("../img/video__clouds_2.png");
+  background-position: 0 -85px, 0 290px;
+  background-repeat: no-repeat;
+}
+
+.video__container {
+  position: relative;
+  padding: 0 50px;
+  max-width: 1630px;
+}
+
+.video__swiper-container {
+  overflow: hidden;
+}
+
+.video__swiper-pagination {
+  top: 0;
+  height: 100px;
+  margin-left: -97px;
+  text-align: right;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.video-pagination-current {
+  color: #4ba2f2;
+  font-size: 56px;
+}
+
+.video-pagination-current:before {
+  content: "0";
+}
+
+.video-pagination-total:before {
+  content: "0";
+}
+
+.video__swiper-wrapper {
+  padding: 0 37px;
+}
+
+.video-container {
+  /* padding: 0 50px; */
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.video__h2 {
+  margin-left: 40px;
+  margin-bottom: 65px;
+}
+
+.video__h2 .blue {
+  color: #4ba2f2;
+}
+
+.video__swiper-slide {
+  height: 500px;
+  width: 100px;
+  border-radius: 12px;
+}
+
+.video__swiper-face {
+  margin-left: 5px;
+  margin-bottom: -50px;
+  display: inline-block;
+}
+
+.video__swiper-h4 {
+  margin-left: 50px;
+  letter-spacing: 0.03em;
+}
+
+.video__swiper-p {
+  margin-left: 112px;
+}
+
+.video__swiper-button-prev,
+.video__swiper-button-next {
+  top: 42%;
+  width: 50px;
+  height: 50px;
+}
+
+.video__swiper-button-next {
+  right: -5px;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.video__swiper-button-prev::after,
+.video__swiper-button-next::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d7dae0;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("../img/specialists__arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.vjs-theme-sea .vjs-big-play-button {
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/video__btn.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: 5555px;
+}
+
+.vjs-icon-play,
+.video-js .vjs-play-control .vjs-icon-placeholder,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  display: none;
+}
+
+.vjs-poster {
+  background-size: 600px;
+  background-size: auto 289px;
+}
+
+@media (max-width: 1500px) {
+  .video__container {
+    position: relative;
+    padding: 0 50px;
+    max-width: 1240px;
+  }
+
+  .video__swiper-button-next {
+    right: 60px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .video {
+    padding: 40px 0 2px 0;
+    background-position: 0 -85px, 0 660px;
+  }
+
+  .video__h2 {
+    margin-bottom: 30px;
+  }
+
+  .video__swiper-pagination .swiper-pagination-total::before{
+    content: "";
+  }
+
+  .video__swiper-pagination .swiper-pagination-current::before{
+    content: "";
+  }
+
+  .video__container {
+    max-width: 620px;
+  }
+
+  .video__swiper-container {
+    height: 825px;
+    height: 370px;
+  }
+
+  .video__swiper-slide {
+    height: 360px;
+  }
+
+  .video__swiper-button-prev,
+  .video__swiper-button-next {
+    top: 47%;
+  }
+
+  .video__swiper-button-next {
+    right: -5px;
+  }
+}
+
+@media(max-width: 650px) {
+  .video {
+    padding: 40px 0 65px 0;
+  }
+
+  .video__container {
+    max-width: 475px;
+  }
+
+  .video__swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .video__swiper-button-next {
+    right: 5px;
+  }
+
+  .vjs-theme-sea .vjs-big-play-button {
+    left: 40%;
+  }
+
+  .vjs-poster {
+    background-position: -50px 0;
+    border-radius: 12px;
+    background-color: transparent;
+  }
+
+  .video__swiper-button-prev {
+    top: 16%;
+    transform: rotate(270deg);
+  }
+
+  .video__swiper-button-next {
+    top: 100%;
+    transform: rotate(90deg);
+  }
+
+  .video__swiper-button-prev,
+  .video__swiper-button-next {
+    left: 45%;
+  }
+}
+
+@media(max-width: 500px) {
+  .video {
+    display: none;
+  }
+}
+
+/* @media(max-width: 400px) {
+  .video {
+    padding: 40px 0 100px 0;
+  }
+
+  .video__h2 {
+    margin-left: 0;
+  }
+
+  .video__swiper-pagination {
+    top: 40px;
+    margin-left: -110px;
+  }
+
+  .video__swiper-pagination .swiper-pagination-current {
+    font-size: 40px;
+  }
+
+  .video__swiper-wrapper {
+    padding-top: 90px;
+  }
+
+  .video__swiper-button-prev {
+    top: 26%;
+  }
+
+  .video__swiper-button-next {
+    top: 110%;
+  }
+
+  .vjs-theme-sea .vjs-big-play-button {
+    left: 30%;
+  }
+} */
+
