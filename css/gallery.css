@@ -136,4 +136,12 @@
   .gallery__list {
     justify-content: left;
   }
+
+  .gallery__btn {
+    width: 300px;
+  }
+
+  .gallery__btn::before {
+    left: 50px;
+  }
 }
